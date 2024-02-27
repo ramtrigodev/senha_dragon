@@ -10,6 +10,7 @@ export function DButton() {
               onPress={()=>{console.log("olá")}}
               title='Click Aqui'
               accessibilityLabel='click em min'
+              color="#831584"
 
             />
         </View>

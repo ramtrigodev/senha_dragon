@@ -7,7 +7,7 @@ export function DTextInput() {
 
         <TextInput
         style={styles.inputer}
-            placeholder='pass'
+            placeholder='SENHA'
             
         ></TextInput>
 

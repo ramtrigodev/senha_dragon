@@ -1,18 +1,25 @@
 import React from 'react';
-import { Button, View } from 'react-native';
+import { Button, View, Text, Pressable } from 'react-native';
 
 import { styles } from './DButtonstyles';
 
 export function DButton() {
     return (
-        <View style={styles.container}>
-            <Button
-              onPress={()=>{console.log("olá")}}
-              title='Click Aqui'
-              accessibilityLabel='click em min'
-              color="#831584"
+        <View>
+           
+            <Pressable
+                onPress={() => console.log("pressionado")}
+              style={styles.button}
+           >
+                <Text style={styles.text}> GERADOR </Text>
+            </Pressable>
 
-            />
+            <Pressable
+                onPress={() => console.log("pressionado")}
+                style={styles.button}
+            >
+                <Text style={styles.text}> COPIAR </Text>
+            </Pressable>
         </View>
     );
 }

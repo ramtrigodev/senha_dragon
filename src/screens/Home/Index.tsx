@@ -15,11 +15,11 @@ export default function Home() {
                 <Dlogo></Dlogo>
             </View>
 
-             <View>
+             <View style={styles.inputContainer}>
                 <DTextInput/>
              </View>
 
-            <StatusBar style="auto" />
+            <StatusBar style="light" />
         </View>
     )
 }

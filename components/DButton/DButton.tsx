@@ -5,7 +5,7 @@ import { styles } from './DButtonstyles';
 
 export function DButton() {
     return (
-        <View>
+        <>
            
             <Pressable
                 onPress={() => console.log("pressionado")}
@@ -20,6 +20,6 @@ export function DButton() {
             >
                 <Text style={styles.text}> COPIAR </Text>
             </Pressable>
-        </View>
+        </>
     );
 }

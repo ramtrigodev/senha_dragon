@@ -3,6 +3,7 @@ import { Button, View, Text, Pressable } from 'react-native';
 import generatePass from '../../src/services/passwordServices';
 import { styles } from './DButtonstyles';
 import { DTextInput } from '../DTextInput/DTextInput';
+import * as Clipboard from 'expo-clipboard';
 
 export function DButton() {
     const [pass, setPass] = useState('')
@@ -10,6 +11,10 @@ export function DButton() {
     function handleGenerateButton() {
         let generateToken = generatePass()
         setPass(generateToken)
+    }
+
+    function handCopyBuuton(){
+        Clipboard.setStringAsync(pass)
     }
     return (
         <>
@@ -22,7 +27,8 @@ export function DButton() {
             </Pressable>
 
             <Pressable
-                onPress={() => console.log("pressionado")}
+                onPress={() => console.log( "pressionado")}
+                
                 style={styles.button}
             >
                 <Text style={styles.text}> COPIAR </Text>

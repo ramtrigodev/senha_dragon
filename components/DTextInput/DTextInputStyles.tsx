@@ -5,7 +5,7 @@ StyleSheet.create({
 
     inputer: {
        width:'100%',
-        backgroundColor: '#E5BF3C',
+        backgroundColor: 'white',
         color:'black',
         fontSize:20,
         height:40,

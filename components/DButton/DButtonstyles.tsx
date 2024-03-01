@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
      paddingHorizontal: 32,
      borderRadius: 4,
      elevation: 3,
-     backgroundColor: 'black'
+     backgroundColor: 'white'
      
   },
   text:{
@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     lineHeight: 21,
     fontWeight: 'bold',
     letterSpacing: 0.25,
-    color: '#E5BF3c'
+    color: '#F85B20'
 
 
   }

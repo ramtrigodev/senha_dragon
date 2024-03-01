@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, View, Text, Pressable } from 'react-native';
-
+import generatePass from '../../src/services/passwordServices';
 import { styles } from './DButtonstyles';
 import { DTextInput } from '../DTextInput/DTextInput';
 
@@ -8,7 +8,8 @@ export function DButton() {
     const [pass, setPass] = useState('')
 
     function handleGenerateButton() {
-        setPass('olá')
+        let generateToken = generatePass()
+        setPass(generateToken)
     }
     return (
         <>

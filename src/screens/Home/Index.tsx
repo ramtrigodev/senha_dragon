@@ -15,7 +15,8 @@ export default function Home() {
             </View>
 
              <View style={styles.inputContainer}>
-                <DTextInput/>
+
+       
                 <DButton/>
              </View>
 
